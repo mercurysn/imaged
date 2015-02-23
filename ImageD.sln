@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageD", "ImageD\ImageD.csproj", "{EF732DF4-0C39-4710-AD19-C157B3383E39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageD.IntegrationTests", "ImageD.IntegrationTests\ImageD.IntegrationTests.csproj", "{179391E2-5DEF-4FB4-9CA5-656F969CB4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageD.UnitTests", "ImageD.UnitTests\ImageD.UnitTests.csproj", "{4476027E-2C42-44D0-A3E0-247808674B3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EF732DF4-0C39-4710-AD19-C157B3383E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF732DF4-0C39-4710-AD19-C157B3383E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF732DF4-0C39-4710-AD19-C157B3383E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179391E2-5DEF-4FB4-9CA5-656F969CB4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179391E2-5DEF-4FB4-9CA5-656F969CB4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179391E2-5DEF-4FB4-9CA5-656F969CB4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179391E2-5DEF-4FB4-9CA5-656F969CB4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4476027E-2C42-44D0-A3E0-247808674B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4476027E-2C42-44D0-A3E0-247808674B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4476027E-2C42-44D0-A3E0-247808674B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4476027E-2C42-44D0-A3E0-247808674B3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
