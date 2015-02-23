@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using NUnit.Framework;
 
@@ -27,7 +28,9 @@ namespace ImageD.IntegrationTests
 
             ImageDownloader downloader = new ImageDownloader(webClient);
 
-            downloader.DownloadImage(DOWNLOAD_PATH, fileName, URL);
+            string downloadLocationPath = downloader.DownloadImage(DOWNLOAD_PATH, fileName, URL);
+
+            Assert.IsTrue(File.Exists(downloadLocationPath));
         }
     }
 }
