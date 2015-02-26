@@ -15,15 +15,13 @@ namespace ImageD.IntegrationTests
             string fileName = @"Test-" + Guid.NewGuid();
             const string URL = @"https://www.atlassian.com//wac/software/jira/tourBlocks/0/screenshotTourSection/0/imageBinary/jiraagile-02_whyja_1_flexibleplanning.png";
 
-            WebProxy proxy = new WebProxy("aujcproxy", 80)
-                             {
-                                 Credentials = CredentialCache.DefaultCredentials
-                             };
-
             WebClient webClient = new WebClient
-                            {
-                                Proxy = proxy
-                            };
+                                  {
+                                      Proxy = new WebProxy("aujcproxy", 80)
+                                              {
+                                                  Credentials = CredentialCache.DefaultCredentials
+                                              }
+                                  };
 
 
             ImageDownloader downloader = new ImageDownloader(webClient);
